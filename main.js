@@ -5,7 +5,6 @@ const phrases = {
     _art: []
 };
 
-
 const phrasePicker = () => {
     let randomNumber = Math.floor(Math.random()*3);
     return `${phrases._first[randomNumber]} \n${phrases._second[randomNumber]} ${phrases._third[randomNumber]}`;
@@ -16,6 +15,5 @@ const figlet = require('figlet');
 
 figlet(phrasePicker(), (err, result) => {
     console.log(err || result);
-    return 'hola'
 });
 
