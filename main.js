@@ -5,16 +5,17 @@ const phrases = {
     _art: []
 };
 
-const figlet = require('figlet');
-
-figlet(phrases._first[0], (err, result) => {
-    console.log(err || result);
-});
-
 
 const phrasePicker = () => {
     let randomNumber = Math.floor(Math.random()*3);
-    return `${phrases._first[randomNumber]} ${phrases._second[randomNumber]} ${phrases._third[randomNumber]} \n ${phrases._art[0]}`;
+    return `${phrases._first[randomNumber]} \n${phrases._second[randomNumber]} ${phrases._third[randomNumber]}`;
 
 };
-console.log(phrasePicker());
+
+const figlet = require('figlet');
+
+figlet(phrasePicker(), (err, result) => {
+    console.log(err || result);
+    return 'hola'
+});
+
