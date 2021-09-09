@@ -15,7 +15,6 @@ const phrasePicker = () => {
     if (second != 0) {
         third = sndRandomNum;
     }
-
     return `${phrases._first[first]} \n${phrases._second[second]} ${phrases._third[third]}`;
 };
 
