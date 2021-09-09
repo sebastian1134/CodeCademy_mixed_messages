@@ -1,8 +1,7 @@
 const phrases = {
     _first: ['Yesterday was a', 'Today is a', 'Tomorrow will be a'],
     _second: ['sunny day', 'cloudy day', 'rainy day'],
-    _third: ['ideal for studying.','ideal for Netflix.', 'ideal for doing sports.'],
-    _art: []
+    _third: ['ideal for studying.','ideal for Netflix.', 'ideal for doing sports.']
 };
 
 const phrasePicker = () => {
