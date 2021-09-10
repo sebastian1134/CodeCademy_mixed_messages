@@ -8,11 +8,11 @@ const randomNum = (num) => {
 };
 
 const phrasePicker = () => {
-    let first = randomNum(3);
-    let second = randomNum(3);
-    let third = randomNum(3);
+    let first = randomNum(phrases._first.length);
+    let second = randomNum(phrases._second.length);
+    let third = randomNum(phrases._third.length);
     if (second != 0) {
-        third = randomNum(2);
+        third = randomNum(phrases._third.length -1);
     }
     return `${phrases._first[first]} \n${phrases._second[second]} ${phrases._third[third]}`;
 };
