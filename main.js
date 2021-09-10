@@ -11,9 +11,8 @@ const phrasePicker = () => {
     let first = randomNum(3);
     let second = randomNum(3);
     let third = randomNum(3);
-    let sndRandomNum = randomNum(2);
     if (second != 0) {
-        third = sndRandomNum;
+        third = randomNum(2);
     }
     return `${phrases._first[first]} \n${phrases._second[second]} ${phrases._third[third]}`;
 };
