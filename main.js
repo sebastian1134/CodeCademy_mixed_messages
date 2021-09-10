@@ -3,15 +3,15 @@ const phrases = {
     _second: ['sunny day', 'cloudy day', 'rainy day'],
     _third: ['ideal for studying.','ideal for Netflix.', 'ideal for doing sports.'] 
 };
-const randomNumbert = () => {
-    return Math.floor(Math.random()*3);
+const randomNum = (num) => {
+    return Math.floor(Math.random()*num);
 };
 
 const phrasePicker = () => {
-    let sndRandomNum = Math.floor(Math.random()*2);
-    let first = randomNumbert();
-    let second = randomNumbert();
-    let third = randomNumbert();
+    let first = randomNum(3);
+    let second = randomNum(3);
+    let third = randomNum(3);
+    let sndRandomNum = randomNum(2);
     if (second != 0) {
         third = sndRandomNum;
     }
